@@ -21,10 +21,10 @@
             android:layout_height="?attr/actionBarSize"
             android:layout_weight="1"
             android:background="?attr/colorPrimary"
-            app:titleTextColor="@color/toolbarTextColor"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/app_name">
+            app:title="@string/app_name"
+            app:titleTextColor="@color/toolbarTextColor">
 
         </android.support.v7.widget.Toolbar>
 

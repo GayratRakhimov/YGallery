@@ -75,7 +75,11 @@ class MainActivity : AppCompatActivity() {
         override fun getItem(position: Int): Fragment {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1)
+            return when(position){
+                0 -> FeedFragment.newInstance("", "")
+                else -> PlaceholderFragment.newInstance(position + 1)
+            }
+
         }
 
         override fun getCount(): Int {
